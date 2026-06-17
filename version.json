@@ -1,9 +1,9 @@
 {
-  "latestVersionCode": 1,
-  "latestVersionName": "0.1.0",
+  "latestVersionCode": 2,
+  "latestVersionName": "0.1.1",
   "minSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/neolinkrnd/beebox-warehouse-releases/releases/download/v0.1.0/beebox-warehouse.apk",
-  "sha256": "a16152023d1cec1a4e93009606a59dd645c5937f9951c3de47e55423028919b3",
-  "releaseNotes": "Merge pull request #12 from neolinkrnd/feat/release-pipeline\n\nfeat(release): signed release APK pipeline + GitHub Release publish",
-  "publishedAt": "2026-06-17T07:49:22Z"
+  "apkUrl": "https://github.com/neolinkrnd/beebox-warehouse-releases/releases/download/v0.1.1/beebox-warehouse.apk",
+  "sha256": "40872f3482993ccbbc90e87029ec46937b757ac87129b631454e2b3fd0059443",
+  "releaseNotes": "chore: bump to 0.1.1 (versionCode 2)\n\nFirst release on the decoupled pipeline — publishes version.json as a release\nasset so the in-app updater (which now reads releases/latest/download/version.json)\nhas a manifest to read.",
+  "publishedAt": "2026-06-17T08:27:10Z"
 }
