@@ -1,9 +1,9 @@
 {
-  "latestVersionCode": 3,
-  "latestVersionName": "0.1.2",
+  "latestVersionCode": 4,
+  "latestVersionName": "0.1.3",
   "minSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/neolinkrnd/beebox-warehouse-releases/releases/download/v0.1.2/beebox-warehouse.apk",
-  "sha256": "27ee97bea075d41740b2771659048f89ae712b2a73179cbb7f446a12514f97c5",
-  "releaseNotes": "fix(config): point distributed release build at DEV; bump 0.1.2\n\nLogin failed because the signed release build targeted prod\n(gatekeeper.neolinkrnd.com), which the test phone can't reach and where the\nwarehouse backend isn't deployed. There's no prod env yet, so the release build\nnow inherits the DEV hosts (dev-gatekeeper / dev-hive-logistic) like debug.\nProd URLs preserved in a comment; introduce dev/prod flavors when prod lands.",
-  "publishedAt": "2026-06-22T05:07:38Z"
+  "apkUrl": "https://github.com/neolinkrnd/beebox-warehouse-releases/releases/download/v0.1.3/beebox-warehouse.apk",
+  "sha256": "657cc56aa83b655ad4f9796cccc1e418a5de241956fb7f49d53d309e943da075",
+  "releaseNotes": "fix(auth): never crash on a bad validate response; surface the real cause; 0.1.3\n\n- AuthRepository.runAuth now catches SerializationException (the uncaught crash\n  class when a response shape mismatches) and maps it to a graceful Failure.\n- HomeScreen's error now shows the actual cause (validate HTTP code / no\n  connection / parse detail) instead of a generic message — lets us debug the\n  post-login 'Could not load your profile' without adb.\n- bump 0.1.3 (versionCode 4).",
+  "publishedAt": "2026-06-22T05:28:11Z"
 }
